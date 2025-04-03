@@ -20,8 +20,8 @@ export async function POST() {
         },
       ],
       mode: "payment",
-      success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/tak`,
-      cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}`,
+        success_url: `/tak`,
+   cancel_url: `/`,
     });
 
     return Response.json({ url: session.url });
