@@ -1,5 +1,5 @@
 import Stripe from "stripe";
-
+   console.log("Stripe Key:", process.env.STRIPE_SECRET_KEY ? "Key found (not showing for security)" : "Key missing");
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 export async function POST() {
