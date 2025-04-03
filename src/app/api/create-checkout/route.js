@@ -19,8 +19,8 @@ export async function POST() {
         },
       ],
       mode: "payment",
-        success_url: `/tak`,
-   cancel_url: `/`,
+       success_url: `https://sommerfest-stripe.vercel.app/tak`,
+   cancel_url: `https://sommerfest-stripe.vercel.app`,
     });
 
     return Response.json({ url: session.url });
